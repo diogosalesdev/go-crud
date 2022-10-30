@@ -45,5 +45,8 @@ func Load() error {
 
 	cfg.DB = DBConfig{
 		Host: viper.GetString("database.host"),
+		Port: viper.GetString("database.port"),
 	}
+
+	return err
 }
